@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Comportamento Jogador</name>
+    <events>
+        <variable constant="0" name="Vida" sid="915171196433072" static="0" type="number">100</variable>
+        <event-group description="" sid="991309202296010" title="ControleCombate">
+            <sub-events>
+                <event-block sid="342153094354815">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="661433540892061" type="Jogador">
+                            <param id="0" name="Object">Inimigo1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="541342817404475" type="Jogador">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">Inimigo1.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="165124884367989" type="System">
+                            <param id="0" name="Variable">Vida</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="454489836291771" type="Jogador">
+                            <param id="0" name="X">Jogador.X - 10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="961957462453133" title="ControleComidaBoa" />
+    </events>
+</c2eventsheet>

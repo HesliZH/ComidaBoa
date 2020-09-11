@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1s1sqzwtsp2r0</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Personagens">
+            <object-folder name="Player">
+                <object-type name="Jogador" sid="278041195829278">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="365033388372069">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326217102717876" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Inimigos">
+                <object-type name="Inimigo1" sid="200468718462833">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="459446214031200">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                        <behavior-type name="Solid" sid="264015291663297">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713322259693580" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Imagepoint 1" x="0.004" y="0.528" />
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Elementos Graficos" />
+        </object-folder>
+        <object-folder name="Terreno">
+            <object-type name="CHao" sid="806721656390175">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="675921916777635">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Jumpthru" sid="153769366787290">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="Textos">
+            <object-folder name="HUD">
+                <object-type name="VidaPersonagem" sid="833491309532705">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="VidaIndicador" sid="820448416299134">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Itens">
+            <object-folder name="Comida Boa">
+                <object-type name="ComidaBoa1" sid="630279319477551">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Sine" sid="325596767192558">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694799269913308" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Comida Ruim">
+                <object-type name="ComidaRuim1" sid="936999390859437">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Sine" sid="174575045861622">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419401928587002" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Fase 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Eventos Menu.xml</event-sheet>
+        <event-sheet>Eventos Fase1.xml</event-sheet>
+        <event-sheet>Eventos Comportamento Jogador.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
