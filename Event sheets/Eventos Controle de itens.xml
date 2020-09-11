@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Controle de itens</name>
+    <events>
+        <event-group description="" sid="378277100105032" title="GerarItensAleatorios">
+            <sub-events>
+                <event-block sid="929873484012411">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="408040064009970" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="471655720798948" type="ComidaBoa1">
+                            <param id="0" name="Instance variable">IdItem</param>
+                            <param id="1" name="Value">int(random(0,4))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="383502097768014" title="MudarFrames">
+            <sub-events>
+                <event-block sid="368175272316680">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="790333371207799" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="359926849790812" type="ComidaBoa1">
+                            <param id="0" name="Frame number">ComidaBoa1.IdItem</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Fase1</name>
     <events>
+        <include>Eventos Controle de itens</include>
+        <include>Eventos Inimigos</include>
         <include>Eventos Comportamento Jogador</include>
     </events>
 </c2eventsheet>

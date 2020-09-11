@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Comportamento Jogador</name>
     <events>
+        <variable constant="0" name="QuaoGordo" sid="314423297895716" static="0" type="number">0</variable>
         <variable constant="0" name="Vida" sid="915171196433072" static="0" type="number">100</variable>
         <event-group description="" sid="991309202296010" title="ControleCombate">
             <sub-events>
@@ -12,8 +13,8 @@
                             <param id="0" name="Object">Inimigo1</param>
                         </condition>
                         <condition id="-2" name="Compare Y" sid="541342817404475" type="Jogador">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Y co-ordinate">Inimigo1.Y</param>
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">Jogador.Y + 36</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -22,12 +23,134 @@
                             <param id="1" name="Value">25</param>
                         </action>
                         <action id="-1" name="Set X" sid="454489836291771" type="Jogador">
-                            <param id="0" name="X">Jogador.X - 10</param>
+                            <param id="0" name="X">Jogador.X - 30</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="961957462453133" title="ControleComidaBoa" />
+        <event-group description="" sid="961957462453133" title="ControleComidaRuim">
+            <sub-events>
+                <event-block sid="440033514405859">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="378504651154097" type="Jogador">
+                            <param id="0" name="Object">ComidaRuim1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="527430310781830" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="442258272018113" type="ComidaRuim1" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="609970870871615" title="ControleDeGordura">
+            <sub-events>
+                <event-block sid="473484013412238">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="399560566871734" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="151508010815532" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="868132819939928" type="Jogador">
+                            <param id="0" name="Acceleration">500</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="822980775077883" type="Jogador">
+                            <param id="0" name="Deceleration">1500</param>
+                        </action>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="731746371364795" type="Jogador">
+                            <param id="0" name="Jump strength">400</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="638394950568862" type="Jogador">
+                            <param id="0" name="Animation">&quot;Gordinho&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="308911743330034">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="241650551698189" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="764282149741127">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="589579463638180" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="940697050223465" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">75</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="352624640711186" type="Jogador">
+                            <param id="0" name="Acceleration">350</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="215420487034517" type="Jogador">
+                            <param id="0" name="Deceleration">1500</param>
+                        </action>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="581095205426570" type="Jogador">
+                            <param id="0" name="Jump strength">350</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="660968203252883" type="Jogador">
+                            <param id="0" name="Animation">&quot;Gordao&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="198620851468058" title="ComidasBoas">
+            <sub-events>
+                <event-block sid="564644296436095">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="135283721865267" type="Jogador">
+                            <param id="0" name="Object">ComidaBoa1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="147836125699202" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="666389966888477" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="101909667599263">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="627808192504694" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="966882348291069" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

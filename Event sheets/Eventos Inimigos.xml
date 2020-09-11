@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Inimigos</name>
+    <events>
+        <event-group description="" sid="597080386411170" title="MovimentaInimigos">
+            <sub-events>
+                <event-block sid="260281913892144">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="955683768569082" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="2" name="Set magnitude" sid="830576045909153" type="Inimigo1">
+                            <param id="0" name="Magnitude">50</param>
+                        </action>
+                        <action behavior="Sine" id="1" name="Set period" sid="697741282512300" type="Inimigo1">
+                            <param id="0" name="Period">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
