@@ -144,12 +144,22 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419401928587002" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419401928587002" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.517857" original-source="D:\Backup\Projetos\ComidaBoa\Textures\Batata Frita Comida Boa.png" />
+                            <frame duration="1" hotspotX="0.557692" hotspotY="0.5" original-source="D:\Backup\Projetos\ComidaBoa\Textures\Coxinha Comida Boa.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Backup\Projetos\ComidaBoa\Textures\Pastel Comida Boa.png" />
+                            <frame duration="1" hotspotX="0.472222" hotspotY="0.446429" original-source="D:\Backup\Projetos\ComidaBoa\Textures\Refri Comida Boa.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.586957" original-source="D:\Backup\Projetos\ComidaBoa\Textures\Pizza Comida Boa.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
             </object-folder>
+        </object-folder>
+        <object-folder name="Fundos">
+            <object-type name="FundoCarlos" sid="388460913121485">
+                <plugin id="TiledBg" />
+                <texture original-source="D:\Backup\Projetos\ComidaBoa\Textures\Fundo.gif" />
+            </object-type>
         </object-folder>
     </object-folder>
     <families />

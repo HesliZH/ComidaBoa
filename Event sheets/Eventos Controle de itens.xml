@@ -14,6 +14,10 @@
                             <param id="0" name="Instance variable">IdItem</param>
                             <param id="1" name="Value">int(random(0,4))</param>
                         </action>
+                        <action id="-10" name="Set value" sid="228204334076418" type="ComidaRuim1">
+                            <param id="0" name="Instance variable">IdItem</param>
+                            <param id="1" name="Value">int(random(0,4))</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -27,6 +31,9 @@
                     <actions>
                         <action id="5" name="Set frame" sid="359926849790812" type="ComidaBoa1">
                             <param id="0" name="Frame number">ComidaBoa1.IdItem</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="965781307143574" type="ComidaRuim1">
+                            <param id="0" name="Frame number">ComidaRuim1.IdItem</param>
                         </action>
                     </actions>
                 </event-block>

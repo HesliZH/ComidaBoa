@@ -10,12 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Fase 1</layout>
-        <event-sheet order="0">Eventos Menu</event-sheet>
-        <event-sheet order="2">Eventos Comportamento Jogador</event-sheet>
-        <event-sheet order="3">Eventos Fase1</event-sheet>
-        <event-sheet order="4">Eventos Inimigos</event-sheet>
-        <event-sheet order="5">Eventos Controle de itens</event-sheet>
+        <layout order="0">Fase 1</layout>
+        <event-sheet order="1">Eventos Fase1</event-sheet>
+        <event-sheet order="2">Eventos Controle de itens</event-sheet>
+        <event-sheet active="1" order="3">Eventos Comportamento Jogador</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,16 +24,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Personagens/" />
+        <folder expanded="0" path="object-folder/Personagens/" />
         <folder expanded="1" path="object-folder/Personagens/Player/" />
         <folder expanded="1" path="object-folder/Personagens/Inimigos/" />
         <folder expanded="1" path="object-folder/Personagens/Elementos Graficos/" />
-        <folder expanded="1" path="object-folder/Terreno/" />
-        <folder expanded="1" path="object-folder/Textos/" />
+        <folder expanded="0" path="object-folder/Terreno/" />
+        <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="1" path="object-folder/Textos/HUD/" />
-        <folder expanded="1" path="object-folder/Itens/" />
+        <folder expanded="0" path="object-folder/Itens/" />
         <folder expanded="1" path="object-folder/Itens/Comida Boa/" />
         <folder expanded="1" path="object-folder/Itens/Comida Ruim/" />
+        <folder expanded="1" path="object-folder/Fundos/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
