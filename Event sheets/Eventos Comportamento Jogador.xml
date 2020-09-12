@@ -71,11 +71,7 @@
                             <param id="0" name="Deceleration">1500</param>
                         </action>
                         <action behavior="Platform" id="4" name="Set jump strength" sid="511181488798343" type="Jogador">
-                            <param id="0" name="Jump strength">650</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="424587935141071" type="Jogador">
-                            <param id="0" name="Animation">&quot;MagraoAi&quot;</param>
-                            <param id="1" name="From">1</param>
+                            <param id="0" name="Jump strength">800</param>
                         </action>
                     </actions>
                 </event-block>
@@ -100,11 +96,7 @@
                             <param id="0" name="Deceleration">1500</param>
                         </action>
                         <action behavior="Platform" id="4" name="Set jump strength" sid="731746371364795" type="Jogador">
-                            <param id="0" name="Jump strength">400</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="638394950568862" type="Jogador">
-                            <param id="0" name="Animation">&quot;Gordinho&quot;</param>
-                            <param id="1" name="From">1</param>
+                            <param id="0" name="Jump strength">750</param>
                         </action>
                     </actions>
                 </event-block>
@@ -135,11 +127,7 @@
                             <param id="0" name="Deceleration">1500</param>
                         </action>
                         <action behavior="Platform" id="4" name="Set jump strength" sid="581095205426570" type="Jogador">
-                            <param id="0" name="Jump strength">400</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="660968203252883" type="Jogador">
-                            <param id="0" name="Animation">&quot;Gordao&quot;</param>
-                            <param id="1" name="From">1</param>
+                            <param id="0" name="Jump strength">750</param>
                         </action>
                     </actions>
                 </event-block>
@@ -200,10 +188,15 @@
                         <condition id="2" name="Key is down" sid="680160486956359" type="Teclado">
                             <param id="0" name="Key">39</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="292175013614522" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="640442639454744" type="Jogador">
-                            <param id="0" name="Animation">&quot;GordoCorrendo&quot;</param>
+                            <param id="0" name="Animation">&quot;MagraoAiCorrendo&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="117566595656731" type="Jogador">
@@ -216,10 +209,15 @@
                         <condition id="2" name="Key is down" sid="900264084567831" type="Teclado">
                             <param id="0" name="Key">37</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="969406578834777" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="788922999515654" type="Jogador">
-                            <param id="0" name="Animation">&quot;GordoCorrendo&quot;</param>
+                            <param id="0" name="Animation">&quot;MagraoAiCorrendo&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="787837037741601" type="Jogador">
@@ -230,9 +228,72 @@
                 <event-block sid="837006396741019">
                     <conditions>
                         <condition id="7" name="On any key released" sid="739295229862472" type="Teclado" />
+                        <condition id="-14" name="Compare variable" sid="721717327390877" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="133188310991352" type="Jogador">
+                            <param id="0" name="Animation">&quot;MagraoAiParado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="496464284551936">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="980603404803909" type="Teclado">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="388347525119920" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="383494097483822" type="Jogador">
+                            <param id="0" name="Animation">&quot;GordoCorrendo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="480645883409666" type="Jogador">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="864315574910062">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="808672263910045" type="Teclado">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="107352896637123" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="798454266331427" type="Jogador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="393812443151363" type="Jogador">
+                            <param id="0" name="Animation">&quot;GordoCorrendo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="887468553904011">
+                    <conditions>
+                        <condition id="7" name="On any key released" sid="716590585343268" type="Teclado" />
+                        <condition id="-14" name="Compare variable" sid="829137632597265" type="System">
+                            <param id="0" name="Variable">QuaoGordo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="223553073150665" type="Jogador">
                             <param id="0" name="Animation">&quot;GordoParado&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>

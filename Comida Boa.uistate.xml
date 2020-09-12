@@ -28,15 +28,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Personagens/Player/" />
         <folder expanded="1" path="object-folder/Personagens/Inimigos/" />
         <folder expanded="1" path="object-folder/Personagens/Elementos Graficos/" />
-        <folder expanded="0" path="object-folder/Terreno/" />
+        <folder expanded="1" path="object-folder/Terreno/" />
         <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="1" path="object-folder/Textos/HUD/" />
         <folder expanded="0" path="object-folder/Itens/" />
         <folder expanded="1" path="object-folder/Itens/Comida Boa/" />
         <folder expanded="1" path="object-folder/Itens/Comida Ruim/" />
         <folder expanded="0" path="object-folder/Fundos/" />
-        <folder expanded="1" path="object-folder/Gatilhos/" />
-        <folder expanded="1" path="object-folder/Programacao/" />
+        <folder expanded="0" path="object-folder/Gatilhos/" />
+        <folder expanded="0" path="object-folder/Programacao/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
