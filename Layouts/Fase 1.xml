@@ -4,7 +4,7 @@
     <sid>375735590223948</sid>
     <event-sheet>Eventos Fase1</event-sheet>
     <size>
-        <width>854</width>
+        <width>3000</width>
         <height>480</height>
     </size>
     <margins>
@@ -28,7 +28,28 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="FundoCarlos" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-4</x>
+                        <y>-46</y>
+                        <z>0</z>
+                        <width>3081</width>
+                        <height>635</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Layer 1" sid="572967723906105">
@@ -67,10 +88,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-63</x>
-                        <y>430</y>
+                        <x>-66.854064941</x>
+                        <y>470.464782715</y>
                         <z>0</z>
-                        <width>965</width>
+                        <width>3173</width>
                         <height>512</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -101,15 +122,20 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>81</x>
-                        <y>419</y>
+                        <x>72.464035034</x>
+                        <y>423.219085693</y>
                         <z>0</z>
-                        <width>24</width>
-                        <height>24</height>
+                        <width>67.973144531</width>
+                        <height>83.387939453</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -159,8 +185,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>40</x>
-                        <y>25</y>
+                        <x>47</x>
+                        <y>26</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
@@ -486,6 +512,31 @@
                         <z>0</z>
                         <width>10</width>
                         <height>10</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MatarInimigo" uid="13">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>73.979240417</x>
+                        <y>470.624511719</y>
+                        <z>0</z>
+                        <width>23.70451355</width>
+                        <height>19.423034668</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

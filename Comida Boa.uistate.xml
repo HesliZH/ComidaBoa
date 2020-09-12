@@ -10,10 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Fase 1</layout>
+        <layout active="1" order="0">Fase 1</layout>
         <event-sheet order="1">Eventos Fase1</event-sheet>
         <event-sheet order="2">Eventos Controle de itens</event-sheet>
-        <event-sheet active="1" order="3">Eventos Comportamento Jogador</event-sheet>
+        <event-sheet order="3">Eventos Comportamento Jogador</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,7 +34,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Itens/" />
         <folder expanded="1" path="object-folder/Itens/Comida Boa/" />
         <folder expanded="1" path="object-folder/Itens/Comida Ruim/" />
-        <folder expanded="1" path="object-folder/Fundos/" />
+        <folder expanded="0" path="object-folder/Fundos/" />
+        <folder expanded="1" path="object-folder/Gatilhos/" />
+        <folder expanded="1" path="object-folder/Programacao/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -45,5 +47,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Inimigo1/" />
         <folder expanded="1" path="animation-folder/ComidaBoa1/" />
         <folder expanded="1" path="animation-folder/ComidaRuim1/" />
+        <folder expanded="1" path="animation-folder/MatarInimigo/" />
     </folders-expanded>
 </c2uistate>

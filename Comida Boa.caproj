@@ -1,23 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
-    <description></description>
-    <version>1.0.0.0</version>
-    <author></author>
-    <author-email></author-email>
-    <author-website>http://</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <name>Comida Boa</name>
+    <description>Jogos de comida boa</description>
+    <version>0.01.01</version>
+    <author>HitKill Studios</author>
+    <author-email>hitkillstudios@gmail.com</author-email>
+    <author-website>https://www.hitkillstudios.com.br</author-website>
+    <app-id>com.hitkillstudios.comidaboa</app-id>
     <unique-id>1s1sqzwtsp2r0</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -55,10 +58,79 @@
                         <behavior-type name="Platform" sid="365033388372069">
                             <behavior id="Platform" />
                         </behavior-type>
+                        <behavior-type name="ScrollTo" sid="151122178908489">
+                            <behavior id="scrollto" />
+                        </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326217102717876" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <animation framecount="4" loop="1" name="GordoParado" pingpong="0" repeatcount="1" repeatto="0" sid="326217102717876" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.264706" y="0.0147059" />
+                                    <point x="0.805147" y="0.0257354" />
+                                    <point x="0.786765" y="0.94853" />
+                                    <point x="0.389705" y="0.948529" />
+                                    <point x="0.0955883" y="0.80147" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.272059" y="0.0220588" />
+                                    <point x="0.779412" y="0.0367647" />
+                                    <point x="0.786765" y="0.955882" />
+                                    <point x="0.147059" y="0.897059" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.272059" y="0.102941" />
+                                    <point x="0.816176" y="0.102941" />
+                                    <point x="0.882353" y="0.919118" />
+                                    <point x="0.102941" y="0.933823" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.25" y="0.0441176" />
+                                    <point x="0.794117" y="0.0735294" />
+                                    <point x="0.875" y="0.919118" />
+                                    <point x="0.102941" y="0.955882" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="1" name="GordoCorrendo" pingpong="0" repeatcount="1" repeatto="0" sid="870526158384543" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.242647" y="0.0220588" />
+                                    <point x="0.823529" y="0.0147059" />
+                                    <point x="0.845588" y="0.933823" />
+                                    <point x="0.191176" y="0.941176" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.264706" y="0.0147059" />
+                                    <point x="0.80147" y="0.0367647" />
+                                    <point x="0.845588" y="0.911765" />
+                                    <point x="0.183824" y="0.926471" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.235294" y="0.0514706" />
+                                    <point x="0.816176" y="0.0441176" />
+                                    <point x="0.808823" y="0.926471" />
+                                    <point x="0.117647" y="0.955882" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.264706" y="0.0147059" />
+                                    <point x="0.764706" y="0.0147059" />
+                                    <point x="0.823529" y="0.919118" />
+                                    <point x="0.147059" y="0.948529" />
+                                </collision-poly>
+                            </frame>
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -158,7 +230,27 @@
         <object-folder name="Fundos">
             <object-type name="FundoCarlos" sid="388460913121485">
                 <plugin id="TiledBg" />
-                <texture original-source="D:\Backup\Projetos\ComidaBoa\Textures\Fundo.gif" />
+                <texture original-source="D:\Backup\Projetos\ComidaBoa\Textures\New_Piskel_3.gif" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Gatilhos">
+            <object-type name="MatarInimigo" sid="851342919825932">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="282725143603374">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934192141386524" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Programacao">
+            <object-type name="Teclado" sid="715432889232866">
+                <plugin id="Keyboard" />
             </object-type>
         </object-folder>
     </object-folder>
@@ -174,7 +266,9 @@
         <event-sheet>Eventos Inimigos.xml</event-sheet>
         <event-sheet>Eventos Controle de itens.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Teclado" uid="14" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
