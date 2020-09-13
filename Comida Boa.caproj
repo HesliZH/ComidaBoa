@@ -166,7 +166,7 @@
                                 </collision-poly>
                             </frame>
                         </animation>
-                        <animation framecount="4" loop="0" name="MagraoAiCorrendo" pingpong="0" repeatcount="1" repeatto="0" sid="135638809354945" speed="5">
+                        <animation framecount="4" loop="1" name="MagraoAiCorrendo" pingpong="0" repeatcount="1" repeatto="0" sid="135638809354945" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                                 <collision-poly>
                                     <point x="0.272059" y="0.0220588" />
@@ -199,6 +199,30 @@
                                     <point x="0.132353" y="0.963235" />
                                 </collision-poly>
                             </frame>
+                        </animation>
+                        <animation framecount="4" loop="1" name="GordaoParado" pingpong="0" repeatcount="1" repeatto="0" sid="549237727430565" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="4" loop="1" name="GordaoCorrendo" pingpong="0" repeatcount="1" repeatto="0" sid="241109636263781" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="4" loop="0" name="GordassoParado" pingpong="0" repeatcount="1" repeatto="0" sid="698704716835921" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="4" loop="0" name="GordassoCorrendo" pingpong="0" repeatcount="1" repeatto="0" sid="466610880692091" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -312,6 +336,10 @@
                 <plugin id="TiledBg" />
                 <texture original-source="D:\Backup\Projetos\ComidaBoa\Textures\New_Piskel_3.gif" />
             </object-type>
+            <object-type name="FundoFloresta" sid="653042825567065">
+                <plugin id="TiledBg" />
+                <texture original-source="D:\Backup\Projetos\ComidaBoa\Textures\GrassLand_Background_Guide.png" />
+            </object-type>
         </object-folder>
         <object-folder name="Gatilhos">
             <object-type name="MatarInimigo" sid="851342919825932">
@@ -338,6 +366,7 @@
     <layout-folder>
         <layout>Menu.xml</layout>
         <layout>Fase 1.xml</layout>
+        <layout>FaseFloresta.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
@@ -345,6 +374,7 @@
         <event-sheet>Eventos Comportamento Jogador.xml</event-sheet>
         <event-sheet>Eventos Inimigos.xml</event-sheet>
         <event-sheet>Eventos Controle de itens.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Teclado" uid="14" />
